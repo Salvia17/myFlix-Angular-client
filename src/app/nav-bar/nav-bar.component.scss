@@ -1,0 +1,55 @@
+#navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 9;
+  box-shadow: 8px 8px 15px #004d40;
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 12px;
+  background-color: #009688;
+}
+
+.app-title {
+  font-size: 22px;
+  margin-left: 30px;
+  color: #fff;
+  font-style: italic;
+  letter-spacing: 2px;
+}
+
+button {
+  font-size: 17px;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+button:hover {
+  color: white;
+}
+
+.nav-links {
+  margin-right: 35px;
+}
+
+@media only screen and (max-width: 464px) {
+  .nav-links {
+    margin-right: -5px;
+  }
+  .app-title {
+    margin-left: 0px;
+  }
+  button {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .nav-links {
+    margin-left: 140px;
+  }
+}

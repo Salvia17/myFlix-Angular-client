@@ -232,7 +232,7 @@ export class GetUserService {
   getUser(): Observable<any> {
     const token = localStorage.getItem('token');
     const user = localStorage.getItem('user')
-    return this.http.get(apiUrl + 'users/:Username', {
+    return this.http.get(`${apiUrl}users/${user}`, {
       headers: new HttpHeaders(
         {
           Authorization: 'Bearer ' + token,
@@ -270,10 +270,10 @@ export class GetFavoriteMoviesService {
   constructor(private http: HttpClient) { }
 
   //Making the api call to get user's favorite movies
-  getUserFavorite(): Observable<any> {
+  getUserFavorite(id: string): Observable<any> {
     const token = localStorage.getItem('token');
     const user = localStorage.getItem('user');
-    return this.http.get(apiUrl + 'users/:Username/:Movies/:MovieID', {
+    return this.http.get(`${apiUrl}users/${user}/movies/${id}`, {
       headers: new HttpHeaders(
         {
           Authorization: 'Bearer ' + token,
@@ -315,7 +315,7 @@ export class AddFavoriteMovieService {
   addFavoriteMovie(id: string): Observable<any> {
     const token = localStorage.getItem('token');
     const user = localStorage.getItem('user');
-    return this.http.post(apiUrl + 'users/:Username/:Movies/:MovieID', id, {
+    return this.http.post(`${apiUrl}users/${user}/movies/${id}`, id, {
       headers: new HttpHeaders(
         {
           Authorization: 'Bearer ' + token,
@@ -353,10 +353,10 @@ export class RemoveFavoriteMovieService {
   constructor(private http: HttpClient) { }
 
   //Making the api call to delete movie from user's favorites
-  deleteFavoriteMovie(): Observable<any> {
+  deleteFavoriteMovie(id: string): Observable<any> {
     const token = localStorage.getItem('token');
     const user = localStorage.getItem('user');
-    return this.http.delete(apiUrl + 'users/:Username/:Movies/:MovieID', {
+    return this.http.delete(`${apiUrl}users/${user}/movies/${id}`, {
       headers: new HttpHeaders(
         {
           Authorization: 'Bearer ' + token,
@@ -397,7 +397,7 @@ export class EditUserService {
   editUser(userDetails: any): Observable<any> {
     const token = localStorage.getItem('token');
     const user = localStorage.getItem('user');
-    return this.http.put(apiUrl + 'users/:Username', userDetails, {
+    return this.http.put(`${apiUrl}users/${user}`, userDetails, {
       headers: new HttpHeaders(
         {
           Authorization: 'Bearer ' + token,
@@ -438,7 +438,7 @@ export class DeleteUserService {
   deleteUser(): Observable<any> {
     const token = localStorage.getItem('token');
     const user = localStorage.getItem('user');
-    return this.http.delete(apiUrl + 'users/:Username', {
+    return this.http.delete(`${apiUrl}users/${user}`, {
       headers: new HttpHeaders(
         {
           Authorization: 'Bearer ' + token,

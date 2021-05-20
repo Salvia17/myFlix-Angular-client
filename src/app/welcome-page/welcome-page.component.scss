@@ -1,0 +1,45 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.main-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 100px 300px 0px 300px;
+  padding: 80px;
+  background-color: #424242;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 8px 8px 15px #004D40;
+}
+
+h1 {
+  font-size: 50px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #FFF;
+}
+
+span {
+  font-style: italic;
+  color: #00796B;
+  -webkit-text-stroke: 0.5px #ccc;
+}
+
+button {
+  margin-top: 5px;
+  border: 1px solid black;
+  width: 100px;
+  border: 1px solid #ccc;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 50px;
+}

@@ -1,0 +1,67 @@
+.movie-card {
+  display: flex;
+  flex-flow: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+}
+
+.card {
+  margin: 20px;
+}
+
+.mat-card {
+  max-width: min-content;
+}
+
+.movie-title {
+  height: 65px;
+  display: flex;
+  flex-direction: column;
+  letter-spacing: 1px;
+}
+
+img {
+  display: block;
+  ///width: 265px;
+  height: 60vh;
+  margin: auto;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 8px 8px 15px #004d40;
+}
+
+.actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.favorite {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.favorite-button {
+  filter: blur(0.7px);
+}
+
+.favorite-button:hover {
+  box-shadow: 1px 1px 1px red;
+  background-color: rgba(38, 50, 56, 0.3);
+}
+
+.action-btn {
+  margin-top: 10px!important;
+  width: 100px;
+  border: 1px solid #ccc;
+  color: #fff;
+  background-color: #009688;
+}
+
+.mat-card-actions:not(.mat-card-actions-align-end) .mat-button:first-child {
+  margin: 0 8px;
+}
