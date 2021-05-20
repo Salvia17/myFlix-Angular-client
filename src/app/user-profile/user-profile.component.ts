@@ -50,7 +50,7 @@ export class UserProfileComponent implements OnInit {
 
   filterFavorites(): void {
     this.movies.forEach((movie: any) => {
-      if (this.user.FavoriteMovies.includes(movie._id)) {
+      if (this.user.FavouriteMovies.includes(movie._id)) {
         this.favorites.push(movie);
       }
     });

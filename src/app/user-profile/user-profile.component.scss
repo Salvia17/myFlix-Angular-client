@@ -1,0 +1,66 @@
+.body {
+  margin: 20px;
+}
+
+.update-profile, .delete-profile {
+  margin-top: 5px;
+  border: 1px solid black;
+  border: 1px solid #ccc;
+}
+
+.user-profile {
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.favorites-container{
+  display: flex;
+  flex-flow: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.favorite-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 20px;
+  justify-content: center
+}
+
+.profile-info {
+  width: 500px!important;
+}
+
+.mat-card {
+  margin: 20px;
+}
+
+.mat-card-title {
+  font-size: 18px;
+}
+
+img {
+  display: block;
+  width: 265px;
+  //height: 60vh;
+  margin: auto;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 8px 8px 15px #004d40;
+}
+
+.favorite-title {
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.title {
+  color: #fff;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
