@@ -38,6 +38,7 @@ $myFlix-Angular-client-theme: mat.define-dark-theme((
 html, body { 
   min-height: 100%; 
   background-image: url("./cool-background.png");
+  background-attachment: fixed;
 }
 
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
